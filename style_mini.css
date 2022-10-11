@@ -25,7 +25,7 @@
     text-align: center;
   }
 }
-@media (max-height: 900px) {
+@media (max-width: 1000px) {
   .dog {
     margin-top: 50px;
     margin-bottom: -30px;
@@ -58,6 +58,21 @@
 @media (max-width: 1400px) {
   .text_3 {
     border: none;
+  }
+}
+@media (max-width: 1700px) {
+  .image_Airdrop img:hover {
+    margin-right: 200px;
+  }
+}
+@media (max-width: 1650px) {
+  .image_Airdrop img:hover {
+    margin-right: 100px;
+  }
+}
+@media (max-width: 1500px) {
+  .image_Airdrop img:hover {
+    margin-right: auto;
   }
 }
 @media (max-height: 900px) {
