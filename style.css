@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ________________Начало контента_______________ */
+
+body {
+  min-width: 100vh;
+  background: linear-gradient(180deg, rgb(196, 15, 241), rgb(38, 6, 180));
+}
+
+header {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+nav {
+  z-index: 2;
+  min-width: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.384);
+  border-radius: 10px;
+  box-shadow: 0px 2px 3px black;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: 6px;
+  margin-left: 20px;
+}
+
+.btn {
+  padding: 20px;
+}
+
+.btn a {
+  font-size: 22px;
+  display: inline-block;
+  align-self: center;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.Home {
+  margin-right: 50px;
+  text-align: center;
+  width: 80px;
+}
+
+.NFT {
+  width: 80px;
+  text-align: center;
+}
+.fon {
+  display: flex;
+  background-image: url(/Пост\ аниме.png);
+  background-size: cover;
+}
+
+.info {
+  margin: 0 auto;
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  line-height: 30px;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgba(196, 15, 241, 0.288);
+
+  box-shadow: 4px 4px 10px black;
+}
+.Text h1 {
+  line-height: 50px;
+  font-size: 24px;
+}
+.btn_1 {
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: none;
+  background-image: linear-gradient(80deg, #ff4206, #261b6c);
+  color: white;
+  z-index: 1;
+}
+.btn_1:hover {
+  background-image: linear-gradient(80deg, #ff4006ce, #261b6cce);
+  background-color: black;
+  padding: 14px 22px;
+  margin: -2px 0;
+}
+
+/* ________второй блок________________________________________ */
+
+.site {
+  margin-top: -30px;
+}
+.block_1 {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.block {
+  z-index: 1;
+  background: rgb(38, 6, 180);
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 4px 4px 15px black;
+  cursor: pointer;
+}
+.block:hover {
+  background: rgb(128, 128, 128);
+}
+
+.block_3 {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+.text_3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  line-height: 30px;
+  padding: 20px;
+  max-width: 500px;
+  border: 1px solid white;
+  border-radius: 10px;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+.image_Airdrop img {
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px white;
+  animation: signal;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes signal {
+  0% {
+    box-shadow: 0px 0px 50px white;
+  }
+  25% {
+    box-shadow: 0px 0px 50px rgb(15, 184, 65);
+  }
+  50% {
+    box-shadow: 0px 0px 50px rgb(219, 13, 13);
+  }
+  75% {
+    box-shadow: 0px 0px 50px rgb(8, 154, 199);
+  }
+  100% {
+    box-shadow: 0px 0px 50px white;
+  }
+}
+/* _______________mint________________ */
+.mint {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: 0 auto 100px auto;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 50px white;
+}
+
+.MuiContainer-root {
+  padding: 0 !important;
+}
+
+.root {
+  margin: auto 50px auto 50px;
+}
+.about_mint {
+  max-width: 50%;
+  max-height: 50%;
+}
+/* _________footer_____________ */
+footer {
+  background-color: rgba(0, 255, 255, 0.199);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+footer h2 {
+  max-width: 30%;
+  margin: 0 auto;
+}
+.footer {
+  max-width: 30%;
+  margin: 0px auto 20px auto;
+}
