@@ -82,7 +82,6 @@ nav {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 24px;
-  line-height: 30px;
   padding: 20px;
   border: 1px solid white;
   border-radius: 10px;
@@ -102,6 +101,8 @@ nav {
   background-image: linear-gradient(80deg, #ff4206, #261b6c);
   color: white;
   z-index: 1;
+  transition-duration: 1s;
+  transition-property: all;
 }
 .btn_1:hover {
   background-image: linear-gradient(80deg, #ff4006ce, #261b6cce);
@@ -131,11 +132,15 @@ nav {
   border-radius: 10px;
   box-shadow: 4px 4px 15px black;
   cursor: pointer;
-}
-.block:hover {
-  background: rgb(128, 128, 128);
+  transition-duration: 1s;
 }
 
+.block:hover {
+  background: rgb(87, 21, 68);
+  margin: -10px 0 0 0;
+  border: none;
+}
+/* _________block _3______________ */
 .block_3 {
   max-width: 80%;
   margin: 0 auto;
@@ -148,7 +153,6 @@ nav {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 24px;
-  line-height: 30px;
   padding: 20px;
   max-width: 500px;
   border: 1px solid white;
@@ -160,10 +164,11 @@ nav {
 .image_Airdrop img {
   width: 500px;
   border-radius: 10px;
-  box-shadow: 0px 0px 50px white;
   animation: signal;
   animation-duration: 4s;
   animation-iteration-count: infinite;
+  transition-duration: 1s;
+  transition-property: all;
 }
 @keyframes signal {
   0% {
@@ -182,8 +187,68 @@ nav {
     box-shadow: 0px 0px 50px white;
   }
 }
+
+.image_Airdrop img:hover {
+  box-shadow: 4px 4px 10px black;
+  width: 600px;
+  margin-right: 400px;
+}
+
 /* _______________mint________________ */
+.mint_info {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+.h2_o {
+  position: absolute;
+  font-size: 60px;
+  animation: vol;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  text-shadow: 0 0 10px white;
+}
+
+@keyframes vol {
+  0% {
+    text-shadow: transparent;
+  }
+  10% {
+    text-shadow: 0 0 10px rgb(66, 5, 5);
+  }
+  20% {
+    text-shadow: 0 0 20px rgb(110, 47, 47);
+  }
+  30% {
+    text-shadow: transparent;
+  }
+  40% {
+    text-shadow: transparent;
+  }
+  50% {
+    text-shadow: 0 0 10 px rgb(85, 8, 8);
+  }
+  60% {
+    text-shadow: 0 0 20 px rgb(114, 69, 69);
+  }
+  70% {
+    text-shadow: transparent;
+  }
+  80% {
+    text-shadow: transparent;
+  }
+  90% {
+    text-shadow: 0 0 10 px rgb(88, 15, 15);
+  }
+  100% {
+    text-shadow: transparent;
+  }
+}
+
 .mint {
+  background-image: url(https://i.pinimg.com/originals/45/e6/b8/45e6b85207aa4af2f8dbd3b76c0525e0.gif);
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -192,10 +257,17 @@ nav {
   border: 1px solid white;
   border-radius: 10px;
   box-shadow: 10px 10px 50px white;
+  z-index: 1;
+  transition-duration: 1s;
+}
+.mint:hover {
+  opacity: 30%;
 }
 
 .MuiContainer-root {
   padding: 0 !important;
+  box-shadow: 4px 4px 10px white;
+  border-radius: 10px !important;
 }
 
 .root {
@@ -204,6 +276,15 @@ nav {
 .about_mint {
   max-width: 50%;
   max-height: 50%;
+}
+.about_mint h2,
+.p_mint {
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 4px 4px 10px white;
+  line-height: 24px;
+}
+.about_mint p {
+  font-size: 20px;
 }
 /* _________footer_____________ */
 footer {
