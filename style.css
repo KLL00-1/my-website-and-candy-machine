@@ -11,7 +11,7 @@ body {
   background: linear-gradient(180deg, rgb(196, 15, 241), rgb(38, 6, 180));
 }
 
-header {
+/*header {
   position: relative;
   display: flex;
   margin: 0 auto;
@@ -109,7 +109,7 @@ nav {
   background-color: black;
   padding: 14px 22px;
   margin: -2px 0;
-}
+}*/
 
 /* ________второй блок________________________________________ */
 
