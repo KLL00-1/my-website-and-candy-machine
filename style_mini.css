@@ -1,4 +1,9 @@
 /* ________блок Header__________ */
+@media (max-width: 930px) {
+  nav {
+    display: none;
+  }
+}
 @media (max-width: 1500px) {
   .info {
     margin-bottom: 30px;
@@ -31,7 +36,7 @@
     margin-bottom: -30px;
   }
   .dog img {
-    max-width: 70%;
+    max-width: 60%;
   }
 }
 
@@ -60,6 +65,14 @@
     border: none;
   }
 }
+@media (max-width: 500px) {
+  .image_Airdrop img {
+    width: 300px;
+  }
+  .image_Airdrop img:hover {
+    width: 350px;
+  }
+}
 @media (max-width: 1700px) {
   .image_Airdrop img:hover {
     margin-right: 200px;
@@ -73,6 +86,11 @@
 @media (max-width: 1500px) {
   .image_Airdrop img:hover {
     margin-right: auto;
+  }
+}
+@media (max-width: 650px) {
+  .h2_o {
+    font-size: 30px;
   }
 }
 @media (max-height: 900px) {
