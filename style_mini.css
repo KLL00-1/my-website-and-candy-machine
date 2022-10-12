@@ -1,9 +1,14 @@
 /* ________блок Header__________ */
-@media (max-width: 930px) {
+@media (max-width: 1050px) {
   nav {
-    display: none;
+    min-width: 0;
+    max-width: 100vh;
+  }
+  .main {
+    justify-content: flex-start;
   }
 }
+
 @media (max-width: 1500px) {
   .info {
     margin-bottom: 30px;
@@ -16,6 +21,7 @@
     font-size: 30px;
   }
   .fon {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -32,11 +38,13 @@
 }
 @media (max-width: 1000px) {
   .dog {
-    margin-top: 50px;
-    margin-bottom: -30px;
+    margin-top: 150px;
   }
   .dog img {
-    max-width: 60%;
+    max-width: 100%;
+  }
+  .Text {
+    margin-top: 50px;
   }
 }
 
